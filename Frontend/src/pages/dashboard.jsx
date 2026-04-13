@@ -107,19 +107,8 @@ const Dashboard = () => {
         {activeTab === 'beranda' && (
           <div className="tab-content">
             <div className="stat-row">
-              <StatCard icon="⚡" label="Total XP" value={totalXP} />
-              <StatCard icon="🏅" label="Level" value={level} />
               <StatCard icon="🔥" label="Streak" value="7 hari" />
               <StatCard icon="📊" label="Progress Minggu" value={`${weekProgress}%`} />
-            </div>
-
-            <div className="xp-card">
-              <div className="xp-row">
-                <span className="xp-label">Level {level} → Level {level + 1}</span>
-                <span className="xp-val">{totalXP} / {nextLevelXP} XP</span>
-              </div>
-              <div className="xp-bar"><div className="xp-fill" style={{ width: `${xpPercent}%` }}></div></div>
-              <div className="xp-hint">Butuh {nextLevelXP - totalXP} XP lagi untuk naik level!</div>
             </div>
 
             <div className="section-title">📚 Progress Mata Pelajaran</div>

@@ -194,22 +194,6 @@
 .stat-value { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--t); }
 .stat-label { font-size: 11px; color: var(--ts); margin-top: 2px; }
 
-/* XP BAR */
-.xp-card {
-  background: var(--card-bg);
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  padding: 18px 20px;
-  margin-bottom: 8px;
-  transition: background .25s;
-}
-.xp-row { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; margin-bottom: 8px; }
-.xp-label { color: var(--t); }
-.xp-val { color: var(--p); }
-.xp-bar { height: 10px; background: var(--p3); border-radius: 5px; overflow: hidden; margin-bottom: 6px; }
-.xp-fill { height: 100%; background: linear-gradient(90deg, var(--p), var(--p2)); border-radius: 5px; transition: width .8s ease; }
-.xp-hint { font-size: 11px; color: var(--ts); }
-
 /* PROGRESS BARS (shared) */
 .bar { height: 7px; background: var(--p3); border-radius: 4px; overflow: hidden; margin-bottom: 0; }
 .bf { height: 100%; background: var(--p); border-radius: 4px; transition: width .6s ease; }
