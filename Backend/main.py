@@ -1,73 +1,63 @@
-import sqlite3
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from pydantic import BaseModel, EmailStr
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware  # Import sekali saja
+from sqlalchemy.orm import Session
+from passlib.context import CryptContext
+import bcrypt
+
+from database import engine, Base, UserDB, get_db
 from login import router as login_router
+
+# Inisialisasi Tabel
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+# Konfigurasi CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-def get_db():
-    conn = sqlite3.connect("app.db")
-    conn.row_factory = sqlite3.Row
-    return conn
+# Hubungkan route login
+app.include_router(login_router)
 
-def init_db():
-    conn = get_db()
-    cursor = conn.cursor()
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nama_depan TEXT,
-        nama_belakang TEXT,
-        email TEXT UNIQUE,
-        password TEXT,
-        kelas TEXT
-    )
-    """)
-    conn.commit()
-    conn.close()
-
-init_db()
+# Setup Hashing
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 class UserRegister(BaseModel):
     nama_depan: str
     nama_belakang: str
     email: EmailStr
     password: str
-    kelas: str = "Pelajar"
+    tingkatan_kelas: str  # ✅ Tambah field ini
 
 @app.post("/register")
-async def register_user(user: UserRegister):
-    conn = get_db()
-    cursor = conn.cursor()
+async def register_user(user: UserRegister, db: Session = Depends(get_db)):
+    # Cek email double
+    existing_user = db.query(UserDB).filter(UserDB.email == user.email).first()
+    if existing_user:
+        return {"status": "gagal", "pesan": "Email sudah terdaftar!"}
+    
+    # Hash password
+    hashed_pass = bcrypt.hashpw(user.password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
 
-    cursor.execute("SELECT * FROM users WHERE email = ?", (user.email,))
-    if cursor.fetchone():
-        conn.close()
-        return {"status": "gagal", "pesan": "Email sudah digunakan!"}
-
-    cursor.execute("""
-        INSERT INTO users (nama_depan, nama_belakang, email, password, kelas)
-        VALUES (?, ?, ?, ?, ?)
-    """, (user.nama_depan, user.nama_belakang, user.email, user.password, user.kelas))
-
-    conn.commit()
-    conn.close()
-
-    return {
-        "status": "sukses",
-        "pesan": f"Halo {user.nama_depan}, pendaftaran berhasil!"
-    }
-
-app.include_router(login_router)
+    new_user = UserDB(
+        nama_depan=user.nama_depan,
+        nama_belakang=user.nama_belakang,
+        email=user.email,
+        password=hashed_pass,
+        tingkatan_kelas=user.tingkatan_kelas  # ✅ Simpan ke DB
+    )
+    
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+    
+    return {"status": "sukses", "pesan": f"Halo {user.nama_depan}, pendaftaran berhasil!"}
 
 if __name__ == "__main__":
     import uvicorn
