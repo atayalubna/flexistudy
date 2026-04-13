@@ -3,6 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useApp } from '../../App';
 import './auth.css';
 
+const getRedirectPath = (kelas) => {
+  if (!kelas) return "/dashboard";
+  if (kelas === "SD") return "/dashboard/sd";
+  if (kelas.includes("SMP")) return "/dashboard/smp";
+  if (kelas.includes("SMA")) return "/dashboard/sma";
+  return "/dashboard";
+};
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,13 +29,13 @@ const Login = () => {
       const data = await response.json();
 
       if (response.ok) {
-        login({
+        const userData = {
           name: data.data.nama_depan + ' ' + data.data.nama_belakang,
           email: data.data.email,
           kelas: data.data.kelas || 'Pelajar',
-        });
-        alert("Login berhasil!");
-        navigate("/dashboard");
+        };
+        login(userData);
+        navigate(getRedirectPath(data.data.kelas));
       } else {
         alert("Gagal: " + (data.detail || data.pesan || "Email / password salah"));
       }

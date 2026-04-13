@@ -71,6 +71,20 @@
 .sb-item:hover { background: var(--s); color: var(--t); }
 .sb-item.active { background: var(--p3); color: var(--p); font-weight: 700; }
 
+/* Badge jenjang di sidebar */
+.sb-badge-jenjang {
+  margin: 8px 14px 4px;
+  padding: 5px 10px;
+  background: var(--p3);
+  color: var(--p);
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 8px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  border: 1.5px solid var(--p);
+}
+
 .sb-user {
   display: flex;
   align-items: center;
@@ -187,12 +201,39 @@
   border: 1px solid var(--border);
   padding: 18px 16px;
   text-align: center;
-  transition: transform .2s, background .25s;
+  transition: transform .2s, background .25s, border-color .2s;
 }
 .stat-card:hover { transform: translateY(-2px); }
 .stat-icon { font-size: 22px; margin-bottom: 6px; }
 .stat-value { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--t); }
 .stat-label { font-size: 11px; color: var(--ts); margin-top: 2px; }
+
+/* ── STREAK ACTIVE ── */
+.stat-card.streak-active {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  border: 1.5px solid #fb923c;
+  box-shadow: 0 4px 16px rgba(251, 146, 60, 0.2);
+}
+[data-theme="dark"] .stat-card.streak-active {
+  background: linear-gradient(135deg, #431407, #7c2d12);
+  border-color: #fb923c;
+  box-shadow: 0 4px 16px rgba(251, 146, 60, 0.3);
+}
+.stat-card.streak-active .stat-value {
+  color: #ea580c;
+}
+.stat-card.streak-active .stat-label {
+  color: #c2410c;
+  font-weight: 700;
+}
+.stat-card.streak-active .stat-icon {
+  display: inline-block;
+  animation: flamePulse 1s ease-in-out infinite;
+}
+@keyframes flamePulse {
+  0%, 100% { transform: scale(1) rotate(-3deg); }
+  50%       { transform: scale(1.25) rotate(3deg); }
+}
 
 /* PROGRESS BARS (shared) */
 .bar { height: 7px; background: var(--p3); border-radius: 4px; overflow: hidden; margin-bottom: 0; }
@@ -337,6 +378,7 @@
   resize: vertical;
   outline: none;
   transition: border-color .2s;
+  box-sizing: border-box;
 }
 .tts-input:focus { border-color: var(--p); }
 .tts-examples { margin-top: 20px; }
@@ -429,6 +471,7 @@
   .sb-item span:last-child { display: none; }
   .sb-logo .ln { display: none; }
   .sb-name, .sb-kelas { display: none; }
+  .sb-badge-jenjang { font-size: 9px; padding: 4px 6px; margin: 6px 8px 4px; }
   .stat-row { grid-template-columns: 1fr 1fr; }
   .subject-grid { grid-template-columns: 1fr 1fr; }
 }

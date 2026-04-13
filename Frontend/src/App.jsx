@@ -1,19 +1,30 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landingPage";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
 import Dashboard from "./pages/dashboard";
-import MateriIPA from "./pages/sd/MateriIPA";
-import MateriBahasaIndonesia from "./pages/sd/MateriBahasaIndonesia";
-import MateriBahasaInggris from "./pages/sd/MateriBahasaInggris";
+
+// SD
+import DashboardSD from "./pages/sd/Dashboard";
+import MateriIPA_SD from "./pages/sd/MateriIPA";
+import MateriBahasaIndonesia_SD from "./pages/sd/MateriBahasaIndonesia";
+import MateriBahasaInggris_SD from "./pages/sd/MateriBahasaInggris";
+
+// SMP
+import DashboardSMP from "./pages/smp/Dashboard";
+import MateriIPA_SMP from "./pages/smp/MateriIPA";
+import MateriBahasaIndonesia_SMP from "./pages/smp/MateriBahasaIndonesia";
+import MateriBahasaInggris_SMP from "./pages/smp/MateriBahasaInggris";
+
+// SMA
+import DashboardSMA from "./pages/sma/Dashboard";
+import MateriIPA_SMA from "./pages/sma/MateriIPA";
+import MateriBahasaIndonesia_SMA from "./pages/sma/MateriBahasaIndonesia";
+import MateriBahasaInggris_SMA from "./pages/sma/MateriBahasaInggris";
 
 export const AppContext = createContext(null);
 export function useApp() { return useContext(AppContext); }
-
-const FAKE_USERS = [
-  { email: "sari@email.com", password: "password", name: "Sari Amelia", kelas: "Kelas 10 SMA" },
-];
 
 function App() {
   const [user, setUser] = useState(() => {
@@ -59,7 +70,13 @@ function App() {
     window.speechSynthesis.speak(utt);
   };
 
-  const ctx = { user, login, register, logout, darkMode, setDarkMode, ttsEnabled, setTtsEnabled, highContrast, setHighContrast, speak };
+  const ctx = {
+    user, login, register, logout,
+    darkMode, setDarkMode,
+    ttsEnabled, setTtsEnabled,
+    highContrast, setHighContrast,
+    speak
+  };
 
   return (
     <AppContext.Provider value={ctx}>
@@ -69,9 +86,24 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/materi/ipa" element={<MateriIPA />} />
-          <Route path="/materi/bahasa-indonesia" element={<MateriBahasaIndonesia />} />
-          <Route path="/materi/bahasa-inggris" element={<MateriBahasaInggris />} />
+
+          {/* ✅ SD */}
+          <Route path="/dashboard/sd" element={<DashboardSD />} />
+          <Route path="/dashboard/sd/materi/ipa" element={<MateriIPA_SD />} />
+          <Route path="/dashboard/sd/materi/bahasa-indonesia" element={<MateriBahasaIndonesia_SD />} />
+          <Route path="/dashboard/sd/materi/bahasa-inggris" element={<MateriBahasaInggris_SD />} />
+
+          {/* ✅ SMP */}
+          <Route path="/dashboard/smp" element={<DashboardSMP />} />
+          <Route path="/dashboard/smp/materi/ipa" element={<MateriIPA_SMP />} />
+          <Route path="/dashboard/smp/materi/bahasa-indonesia" element={<MateriBahasaIndonesia_SMP />} />
+          <Route path="/dashboard/smp/materi/bahasa-inggris" element={<MateriBahasaInggris_SMP />} />
+
+          {/* ✅ SMA */}
+          <Route path="/dashboard/sma" element={<DashboardSMA />} />
+          <Route path="/dashboard/sma/materi/ipa" element={<MateriIPA_SMA />} />
+          <Route path="/dashboard/sma/materi/bahasa-indonesia" element={<MateriBahasaIndonesia_SMA />} />
+          <Route path="/dashboard/sma/materi/bahasa-inggris" element={<MateriBahasaInggris_SMA />} />
         </Routes>
       </Router>
     </AppContext.Provider>

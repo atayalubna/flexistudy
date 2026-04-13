@@ -27,7 +27,7 @@ const Register = () => {
       const data = await response.json();
       if (data.status === "sukses") {
         alert(data.pesan);
-        navigate("/login");
+        navigate("/login"); // ✅ ke login dulu
       } else {
         alert("Gagal daftar: " + data.pesan);
       }
