@@ -88,7 +88,7 @@ const BahasaIndonesiaSMK = () => {
           border-bottom: 3px solid #2377e4;
           padding-bottom: 10px;
           margin-bottom: 25px;
-          color: #ffffff;
+          color: #000000;
         }
         .grid-content {
           display: grid;

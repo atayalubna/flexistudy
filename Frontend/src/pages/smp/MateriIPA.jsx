@@ -122,7 +122,7 @@ const IPAMateriSMP = () => {
         
         /* QUIZ SECTION */
         .quiz-container {
-          background-color: #f8fff4;
+          background-color: #5c82ff;
           border: 2px solid #d4edda;
           border-radius: 15px;
           padding: 30px;
@@ -135,7 +135,7 @@ const IPAMateriSMP = () => {
           margin-bottom: 20px;
         }
         .quiz-icon {
-          background: #28a745;
+          background: #2b56ff;
           color: white;
           width: 40px;
           height: 40px;
@@ -180,7 +180,7 @@ const IPAMateriSMP = () => {
       {/* HEADER */}
       <div className="header-box">
         <h2 style={{ margin: 0, color: "#0056b3" }}>{state?.title || "Materi IPA Terpadu"}</h2>
-        <p style={{ margin: "5px 0", color: "#666" }}>
+        <p style={{ margin: "5px 0", color: "#ffffff" }}>
           Topik: {state?.topic || "Sains Menengah (SMP)"} | ID: {id || "IPA-SMP-002"}
         </p>
       </div>
@@ -220,8 +220,8 @@ const IPAMateriSMP = () => {
         <div className="quiz-header">
           <div className="quiz-icon">?</div>
           <div>
-            <h3 style={{ margin: 0, color: "#155724" }}>Uji Pemahaman SMP</h3>
-            <p style={{ margin: 0, fontSize: "0.85rem", color: "#28a745" }}>Soal akan diacak otomatis setiap kali Anda mengulang kuis.</p>
+            <h3 style={{ margin: 0, color: "#ffffff" }}>Uji Pemahaman SMP</h3>
+            <p style={{ margin: 0, fontSize: "0.85rem", color: "#ffffff" }}>Soal akan diacak otomatis setiap kali Anda mengulang kuis.</p>
           </div>
         </div>
 
@@ -234,7 +234,7 @@ const IPAMateriSMP = () => {
         ) : (
           questions.length > 0 && (
             <div className="question-area">
-              <p style={{ color: "#888", fontSize: "0.9rem" }}>Pertanyaan {currentQuestion + 1} dari {questions.length}</p>
+              <p style={{ color: "#ffffff", fontSize: "0.9rem" }}>Pertanyaan {currentQuestion + 1} dari {questions.length}</p>
               <h4 style={{ margin: "10px 0 20px 0", lineHeight: "1.5" }}>{questions[currentQuestion].q}</h4>
               <div className="option-list">
                 {questions[currentQuestion].options.map((opt, idx) => (

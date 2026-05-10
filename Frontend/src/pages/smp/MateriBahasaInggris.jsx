@@ -78,7 +78,7 @@ const EnglishJuniorHigh = () => {
           background-color: #fff;
         }
         .header-box {
-          background-color: #f0f4ff;
+          background-color: #7a9eff;
           padding: 20px;
           border-radius: 12px;
           border-left: 6px solid #4a90e2;
@@ -87,7 +87,7 @@ const EnglishJuniorHigh = () => {
         .section-main {
           font-size: 1.4rem;
           font-weight: bold;
-          color: #2c3e50;
+          color: #2894ff;
           border-bottom: 2px solid #eee;
           padding-bottom: 10px;
           margin-top: 30px;
@@ -121,7 +121,7 @@ const EnglishJuniorHigh = () => {
         
         /* QUIZ CSS */
         .quiz-box {
-          background-color: #f9fff0;
+          background-color: #7a9eff;
           border: 1px solid #d4edda;
           border-radius: 15px;
           padding: 25px;
@@ -134,7 +134,7 @@ const EnglishJuniorHigh = () => {
           margin-bottom: 20px;
         }
         .quiz-icon {
-          background: #28a745;
+          background: #647fc9;
           color: white;
           width: 35px;
           height: 35px;
@@ -168,7 +168,7 @@ const EnglishJuniorHigh = () => {
           padding: 20px;
         }
         .btn-restart {
-          background-color: #28a745;
+          background-color: #000000;
           color: white;
           border: none;
           padding: 10px 25px;
@@ -182,7 +182,7 @@ const EnglishJuniorHigh = () => {
       {/* HEADER */}
       <div className="header-box">
         <h2 style={{ margin: 0 }}>English Subject</h2>
-        <p style={{ margin: "5px 0", color: "#666" }}>
+        <p style={{ margin: "5px 0", color: "#fffbfb" }}>
           Topic: {state?.topic || "Junior High School (Grade 7–9)"} | ID: {id || "ENG-JHS"}
         </p>
       </div>
@@ -241,7 +241,7 @@ const EnglishJuniorHigh = () => {
           <div className="quiz-icon">?</div>
           <div>
             <h3 style={{ margin: 0 }}>Knowledge Check</h3>
-            <p style={{ margin: 0, fontSize: "0.8rem", color: "#28a745" }}>Questions will be shuffled every time you restart.</p>
+            <p style={{ margin: 0, fontSize: "0.8rem", color: "#ffffff" }}>Questions will be shuffled every time you restart.</p>
           </div>
         </div>
 
@@ -254,7 +254,7 @@ const EnglishJuniorHigh = () => {
         ) : (
           questions.length > 0 && (
             <div className="question-content">
-              <p style={{ color: "#888", fontSize: "0.85rem" }}>Question {currentQuestion + 1} of {questions.length}</p>
+              <p style={{ color: "#ffffff", fontSize: "0.85rem" }}>Question {currentQuestion + 1} of {questions.length}</p>
               <h4 style={{ margin: "10px 0 20px 0" }}>{questions[currentQuestion].q}</h4>
               <div className="opt-list">
                 {questions[currentQuestion].options.map((option, idx) => (
