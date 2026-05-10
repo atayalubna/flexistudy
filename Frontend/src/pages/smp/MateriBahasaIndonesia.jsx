@@ -79,7 +79,7 @@ const BahasaIndonesiaSMP = () => {
         }
 
         .header-blue {
-          background-color: #f1f7ff;
+          background-color: rgb(206, 227, 255);
           padding: 15px 25px;
           border-radius: 10px;
           border-left: 5px solid #2d7dd2;
@@ -88,11 +88,11 @@ const BahasaIndonesiaSMP = () => {
 
         .section-title {
           font-size: 1.2rem;
-          color: #77c145;
+          color: #455ec1;
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 20px;
-          border-bottom: 1px solid #77c145;
+          border-bottom: 1px solid #455ec1;
           padding-bottom: 10px;
         }
 
@@ -108,7 +108,7 @@ const BahasaIndonesiaSMP = () => {
           border: 1px solid #e0e6ed;
           border-radius: 12px;
           padding: 20px;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+          box-shadow: 0 4px 6px rgba(211, 136, 136, 0.02);
         }
 
         .badge-topic {
@@ -217,43 +217,792 @@ const BahasaIndonesiaSMP = () => {
       <div className="grid-materi">
         {/* Kelompok 1 */}
         <div className="card-materi">
-          <span className="badge-topic">Deskripsi & Narasi</span>
-          <h4>Sastra Imajinatif</h4>
+          <span className="badge-topic">Materi Kelas 7</span>
+          <h4>Teks Deskripsi</h4>
           <p>
-            <strong>Teks Deskripsi:</strong> Menggambarkan objek/tempat melalui panca indra.<br />
-            <strong>Narasi Fantasi:</strong> Cerita ajaib dengan struktur Orientasi, Komplikasi, dan Resolusi.
+            <strong>Apa Itu Teks Deskripsi?</strong> 
+            <br/>
+            Teks deskripsi adalah teks yang digunakan untuk menggambarkan suatu benda, tempat, hewan, orang, atau suasana dengan jelas.
+            <br />
+            Tujuan teks deskripsi adalah agar pembaca bisa:
+            <br/>
+            <ul>
+              <li>Membayangkan objek yang dijelaskan</li>
+              <li>Merasakan suasana dalam teks</li>
+              <li>Mengenali ciri-ciri sesuatu</li>
+            </ul>
+            <br/>
+            Contoh Teks Deskripsi
+            <br/>
+            “Pantai itu memiliki pasir putih yang lembut dan air laut berwarna biru jernih.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Kalimat tersebut menggambarkan keadaan pantai dengan jelas sehingga pembaca bisa membayangkannya.
+            <br/>
+            <strong>Ciri-ciri Teks Deskripsi</strong> 
+            <br/>
+            Teks deskripsi memiliki beberapa ciri khusus.
+            <br/>
+            1. Menggambarkan Sesuatu dengan Jelas
+            <br/>
+            Teks menjelaskan bentuk, warna, ukuran, atau suasana.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Kucing itu berbulu putih dan memiliki mata hijau.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Kalimat tersebut menjelaskan ciri-ciri kucing secara detail.
+            <br/>
+            <br/>
+            2. Menggunakan Kata Sifat
+            <br/> 
+            Kata sifat membantu memperjelas gambaran objek.
+            <br/>
+            <br/>
+            Contoh Kata Sifat:
+            <ul>
+              <li>Indah</li>
+              <li>Besar</li>
+              <li>Bersih</li>
+              <li>Wangi</li>
+            </ul>
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Taman itu sangat indah dan bersih.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Kata “indah” dan “bersih” membantu pembaca membayangkan taman.
+            <br/>
+            <br/>
+            3. Membuat Pembaca Seolah-olah Melihat Langsung
+            <br/>
+            Teks deskripsi dibuat sedetail mungkin.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Udara pagi terasa sejuk dan angin bertiup pelan.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Pembaca dapat membayangkan suasana pagi yang nyaman.
+            <br/>
+            <br/>
+            <strong>Jenis Teks Deskripsi</strong>
+            <br/>
+            1. Deskripsi Orang
+            <br/>
+            Menggambarkan ciri atau sifat seseorang.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Rani memiliki rambut panjang dan senyum yang ramah.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Kalimat tersebut menjelaskan penampilan dan sifat Rani.
+            <br/>
+            <br/>
+            2. Deskripsi Tempat
+            <br/>
+            Menggambarkan keadaan suatu tempat.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Perpustakaan sekolah sangat tenang dan penuh buku.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Pembaca bisa membayangkan suasana perpustakaan.
+            <br/>
+            <br/>
+            3. Deskripsi Hewan atau Benda
+            <br/>
+            Menjelaskan ciri-ciri hewan atau benda.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Sepeda itu berwarna merah dengan roda besar.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Kalimat tersebut menjelaskan bentuk dan warna sepeda.
+            <br/>
+            <br/>
+            <strong>Struktur Teks Deskripsi</strong>
+            <br/>
+            Teks deskripsi biasanya memiliki dua bagian utama.
+            <br/>
+            <br/>
+             1. Identifikasi
+            <br/>
+            Bagian yang memperkenalkan objek.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Kucingku bernama Milo.”
+            <br/>
+            <br/>
+              Pengertian Contoh:
+            <br/>
+              Kalimat ini memperkenalkan objek yang akan dijelaskan.
+              <br/>
+              <br/>
+              2. Deskripsi Bagian
+              <br/>
+              Bagian yang menjelaskan ciri-ciri objek.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              “Milo memiliki bulu cokelat lembut dan ekor panjang.”
+              <br/>
+              <br/>
+              Pengertian Contoh:
+              <br/>
+              Kalimat tersebut menjelaskan detail tentang Milo.
+              <br/>
+              <br/>
+              <strong>Contoh Teks Deskripsi Lengkap</strong>
+              <br/>
+              “Taman Sekolahku”
+              <br/>
+              <br/>
+              Taman sekolahku sangat indah dan bersih.
+              Di taman itu terdapat banyak bunga berwarna-warni.
+              Udara di sekitar taman terasa sejuk karena banyak pohon hijau.
+              Setiap pagi, burung-burung berkicau dengan merdu.
+              <br/>
+              <br/>
+               Pengertian Teks:
+              <br/>
+                Teks tersebut menggambarkan suasana taman sekolah dengan detail. Pengertian Teks:
+              <br/>
+                Teks tersebut menggambarkan suasana taman sekolah dengan detail.
+              <br/>
+              <br/>
+               Ciri-ciri yang terlihat:
+               <ul>
+                <li>Menggunakan kata sifat → indah, bersih, sejuk</li>
+                <li>Menggambarkan suasana</li>
+                <li>Membantu pembaca membayangkan taman</li>
+               </ul>
+               <br/>
+               <br/>
+               Cara Membuat Teks Deskripsi
+               <br/>
+               Membuat teks deskripsi cukup mudah jika dilakukan langkah demi langkah.
+               <br/>
+               <br/>
+                Langkah 1 — Tentukan Objek
+              <br/>
+                Pilih benda, tempat, orang, atau hewan yang ingin dijelaskan.
+                <br/>
+                <br/>
+              Langkah 2 — Perhatikan Ciri-cirinya
+              <br/>
+              Amati:
+              <ul>
+                <li>Warna</li>
+                <li>Warna</li>
+                <li>Ukuran</li>
+                <li>Suasana</li>
+              </ul>
+              <br/>
+              <br/>
+              Langkah 3 — Gunakan Kata Sifat
+              <br/>
+              Tambahkan kata yang membuat deskripsi lebih jelas.
+              <br/>
+              <br/>
+              Langkah 4 — Susun Menjadi Paragraf
+              <br/>
+              Gabungkan kalimat menjadi teks yang rapi.
+              <br/>
+              <br/>
+              <strong>Perbedaan Teks Deskripsi dan Narasi</strong>
+              <br/>
+              <br/>
+              <table border="1">
+              <tr>
+                <th>Teks Deskripsi </th>
+                <th>Teks Narasi</th>
+              </tr>
+              <tr>
+                <td>Menggambarkan sesuatu </td>
+                <td>Menceritakan kejadian</td>
+              </tr>
+              <tr>
+                <td>Fokus pada ciri-ciri</td>
+                <td>Fokus pada alur cerita</td>
+              </tr>
+              <tr>
+                <td>Banyak kata sifat </td>
+                <td>Banyak kegiatan</td>
+              </tr>
+            </table>
+            <br/>
+            <strong>Tips Membuat Teks Deskripsi Menarik</strong>
+            <br/>
+            <br/>
+            1. Gunakan Pengamatan yang Jelas
+            <br/>
+            Perhatikan detail objek.
+            <br/>
+            <br/>
+            2. Gunakan Kata yang Mudah Dipahami
+            <br/>
+            Hindari kata yang terlalu rumit.
+            <br/>
+            <br/>
+            3. Tambahkan Suasana
+            <br/>
+            Jelaskan apa yang dirasakan atau dilihat.
+            <br/>
+            <br/>
+            Kesimpulan
+            <br/>
+            <ul>
+              <li>Teks deskripsi digunakan untuk menggambarkan sesuatu dengan jelas.</li>
+              <li>Teks deskripsi membantu pembaca membayangkan objek atau suasana.</li>
+              <li>Ciri teks deskripsi adalah menggunakan kata sifat dan penjelasan detail.</li>
+              <li>Teks deskripsi dapat menggambarkan orang, tempat, hewan, atau benda.</li>
+              <li>* Semakin detail penjelasannya, semakin mudah pembaca membayangkan objek tersebut.</li>
+            </ul>
           </p>
         </div>
 
         {/* Kelompok 2 */}
         <div className="card-materi">
-          <span className="badge-topic">Prosedur & Observasi</span>
-          <h4>Teks Informatif</h4>
+          <span className="badge-topic">Materi kelas 8</span>
+          <h4>Teks Berita</h4>
           <p>
-            <strong>Teks Prosedur:</strong> Instruksi tutorial (tujuan, alat, langkah, penutup).<br />
-            <strong>LHO:</strong> Laporan hasil pengamatan lapangan secara objektif dan informatif.
+            <strong>Apa Itu Teks Berita?</strong> 
+            <br/>
+            Teks berita adalah teks yang berisi informasi tentang suatu peristiwa atau kejadian yang nyata dan penting untuk diketahui banyak orang.
+            <br/>
+            <br/>
+            Berita biasanya disampaikan melalui:
+            <ul>
+              <li>Televisi</li>
+              <li>Surat kabar</li>
+              <li>Radio</li>
+              <li>Internet</li>
+            </ul>
+            <br/>
+            <br/>
+            Tujuan teks berita adalah memberikan informasi yang jelas dan benar kepada pembaca atau pendengar.
+            <br/>
+            <br/>
+            Contoh Sederhana
+            <br/>
+            “Kerja bakti membersihkan lingkungan dilakukan warga pada Minggu pagi.”
+            <br/>
+            <br/>
+             Pengertian Contoh:
+            <br/>
+            Kalimat tersebut memberikan informasi tentang kegiatan nyata yang dilakukan warga.
+            <br/>
+            <br/>
+            <strong>Ciri-ciri Teks Berita</strong> 
+            <br/>
+            Teks berita memiliki beberapa ciri khusus.
+            <br/>
+            <br/>
+            1. Berdasarkan Fakta
+            <br/>
+            Berita harus benar-benar terjadi.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Sekolah mengadakan lomba kebersihan kelas.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Informasi tersebut merupakan kejadian nyata.
+            <br/>
+            2. Menggunakan Bahasa Jelas
+            <br/>
+            Bahasa dibuat mudah dipahami.
+            <br/>
+            <br/>
+            3. Memberikan Informasi Penting
+            <br/>
+            Berita berisi hal yang berguna untuk diketahui banyak orang.
+            <br/>
+            <br/>
+            4. Bersifat Objektif
+            <br/>
+            Berita tidak boleh berlebihan atau memihak.
+            <br/>
+            <br/>
+            Contoh:
+            <br/>
+            “Pertandingan berlangsung selama dua jam.”
+            <br/>
+            <br/>
+            Pengertian Contoh:
+            <br/>
+            Kalimat tersebut menyampaikan fakta tanpa tambahan pendapat pribadi.
+            <br/>
+            <br/>
+            Unsur-unsur Teks Berita
+            <br/>
+           Dalam berita terdapat unsur penting yang disebut 5W + 1H.
+           <br/>
+           <br/>
+           What (Apa)
+          <br/>
+          Menjelaskan apa yang terjadi.
+          <br/>
+          <br/>
+          Contoh:
+          <br/>
+          “Terjadi lomba membaca puisi di sekolah.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+          Bagian ini menjelaskan kejadian utama dalam berita.
+          <br/>
+          <br/>
+          Who (Siapa)
+          <br/>   
+          Menjelaskan siapa yang terlibat.
+          <br/>
+          <br/>
+          Contoh:
+          <br/>
+          “Siswa kelas VIII mengikuti lomba.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+          Bagian ini menunjukkan orang yang terlibat dalam peristiwa.
+          <br/>
+          <br/>
+          Where (Di Mana)
+          <br/>
+          Menjelaskan tempat kejadian.
+          <br/>
+          <br/>
+          Contoh:
+          <br/>
+          “Lomba diadakan di aula sekolah.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+          Bagian ini menjelaskan lokasi kejadian.
+          <br/>
+          <br/>
+          When (Kapan)
+          <br/>
+          Menjelaskan waktu kejadian.
+          <br/>
+          <br/>
+          Contoh:
+          <br/>
+          “Kegiatan berlangsung pada hari Senin.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+          Bagian ini menunjukkan waktu terjadinya peristiwa.
+          <br/>
+          <br/>
+          Why (Mengapa)
+          <br/>
+          Menjelaskan alasan kejadian.
+          <br/>
+          <br/>
+          Contoh:
+          <br/>
+          “Lomba diadakan untuk meningkatkan minat membaca siswa.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+          Bagian ini menjelaskan tujuan kegiatan.
+          <br/>
+          <br/>
+          How (Bagaimana)
+          <br/>
+          Menjelaskan proses atau jalannya kejadian.
+          <br/>
+          <br/>
+          Contoh:
+          <br/> 
+          “Peserta membaca puisi di depan juri dan penonton.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+          Bagian ini menjelaskan bagaimana kegiatan berlangsung.
+          <br/>
+          <br/>
+          <strong>Struktur Teks Berita</strong>
+          <br/>
+          Teks berita biasanya memiliki tiga bagian utama.
+          <br/>
+          1.  Judul Berita
+          <br/>
+          Judul dibuat singkat dan menarik.
+          <br/>
+          <br/>
+          2. Kepala Berita
+          <br/>
+          Berisi informasi paling penting.
+          <br/>
+          <br/>
+          3. Isi Berita
+          <br/>
+          Berisi penjelasan lebih lengkap tentang kejadian.
+          <br/>
+          <br/>
+           <strong> Perbedaan Teks Berita dan Cerita</strong>
+           <table border="1">
+          <tr>
+            <th>Teks Berita</th>
+            <th>Cerita </th>
+          </tr>
+          <tr>
+            <td>Berdasarkan fakta</td>
+            <td>Bisa khayalan </td>
+          </tr>
+          <tr>
+            <td>Memberikan informasi</td>
+            <td>Untuk hiburan</td>
+          </tr>
+           <tr>
+            <td>Bahasa jelas dan singkat</td>
+            <td>Bahasa lebih bebas </td>
+          </tr>
+        </table>
+          <br/>
+          <br/>
+          <strong> Cara Membuat Teks Berita</strong>
+          <br/>
+          Langkah 1 — Tentukan Peristiwa
+          <br/>
+          Pilih kejadian nyata.
+          <br/>
+          Contoh:
+          <ul>
+            <li>Lomba sekolah</li>
+            <li>Kerja bakti</li>
+            <li>Pertandingan olahraga</li>
+          </ul>
+          <br/>
+          <br/>
+          Langkah 2 — Cari Informasi Penting
+          <br/>
+          Gunakan unsur 5W + 1H.
+          <br/>
+          <br/>
+          Langkah 3 — Susun Secara Jelas
+          <br/>
+          Mulai dari informasi paling penting.
+          <br/>
+          <br/>
+          Langkah 4 — Gunakan Bahasa Resmi dan Mudah Dipahami
+          <br/>
+          Hindari bahasa berlebihan.
+          <br/>
+          <br/>
+          <strong>Tips Membaca Berita</strong>
+          <br/>
+           1. Perhatikan Judul
+          <br/>
+          Judul membantu mengetahui isi berita.
+          <br/>
+          <br/>
+          2. Cari Informasi Penting
+          <br/>
+          Temukan unsur 5W + 1H.
+          <br/>
+          <br/>
+          3. Bedakan Fakta dan Pendapat
+          <br/>
+          Berita harus berdasarkan fakta.
+          <br/>
+          <br/>
+          <strong>Kesimpulan</strong>
+          <ul>
+            <li>Teks berita adalah teks yang berisi informasi tentang kejadian nyata.</li>
+            <li>Berita harus berdasarkan fakta dan menggunakan bahasa jelas.</li>
+            <li>Unsur berita terdiri dari 5W + 1H.</li>
+            <li>Struktur berita terdiri dari judul, kepala berita, dan isi berita.</li>
+            <li>Teks berita membantu masyarakat mengetahui informasi penting.</li>
+          </ul>
           </p>
         </div>
 
         {/* Kelompok 3 */}
         <div className="card-materi">
-          <span className="badge-topic">Komunikasi & Opini</span>
-          <h4>Persuasi Publik</h4>
+          <span className="badge-topic">Materi Kelas 9</span>
+          <h4>Teks Laporan Percobaan</h4>
           <p>
-            <strong>Berita:</strong> Format piramida terbalik (info penting di awal).<br />
-            <strong>Iklan/Poster:</strong> Teknik membujuk singkat & menarik.<br />
-            <strong>Eksposisi:</strong> Argumen pribadi berbasis fakta.
-          </p>
-        </div>
+            <strong>Apa Itu Teks Laporan Percobaan?</strong> 
+            <br/>
+            Teks laporan percobaan adalah teks yang berisi penjelasan tentang suatu percobaan yang telah dilakukan.
+            <br />
+            Percobaan biasanya dilakukan untuk:
+            <ul>
+              <li>Mengetahui hasil suatu kegiatan</li>
+              <li>Membuktikan sesuatu</li>
+              <li>Mempelajari proses tertentu</li>
+            </ul>
+            <br/>
+            <br/>
+            Teks laporan percobaan dibuat agar orang lain dapat memahami:
+            <br/>
+             <ul>
+              <li>Tujuan percobaan</li>
+              <li>Langkah-langkah percobaan</li>
+              <li>Hasil percobaan</li>
+            </ul>
+            <br/>
+            <br/>
+            Contoh Sederhana
+            <br/>
+            “Percobaan menanam kacang hijau dilakukan untuk mengetahui pengaruh air terhadap pertumbuhan tanaman.”
+          <br/>
+          <br/>
+          Pengertian Contoh:
+          <br/>
+            Kalimat tersebut menjelaskan tujuan sebuah percobaan.
+            <br/>
+            <br/>
 
-        {/* Kelompok 4 */}
-        <div className="card-materi">
-          <span className="badge-topic">Sastra Lanjutan</span>
-          <h4>Puisi Rakyat</h4>
-          <p>
-            <strong>Pantun:</strong> Sampiran & isi (a-b-a-b).<br />
-            <strong>Syair:</strong> Sajak terus menerus (a-a-a-a).<br />
-            <strong>Gurindam:</strong> Dua baris berisi nasihat.
+            <strong>Ciri-ciri Teks Laporan Percobaan</strong>
+            <br/>
+             Teks laporan percobaan memiliki beberapa ciri khusus.
+             <br/>
+              1. Berdasarkan Fakta
+              <br/>
+              Isi laporan sesuai hasil percobaan nyata.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              “Tanaman tumbuh lebih cepat setelah disiram setiap hari.”
+              <br/>
+              <br/>
+              Pengertian Contoh:
+              <br/>
+              Kalimat tersebut berdasarkan hasil pengamatan.
+              <br/>
+              <br/>
+              2. Menggunakan Bahasa Jelas
+              <br/>
+              Bahasa dibuat mudah dipahami.
+              <br/>
+              <br/>
+               3. Disusun Secara Urut
+               <br/>
+               Langkah percobaan dijelaskan berurutan.
+               <br/>
+               <br/>
+                4. Bersifat Informatif
+              <br/>
+              Memberikan informasi dan pengetahuan.
+              <br/>
+              <br/>
+            <strong>Struktur Teks Laporan Percobaan</strong> 
+            <br/>
+            Teks laporan percobaan memiliki beberapa bagian penting.
+            <br/>
+            <br/>
+               Judul Percobaan
+                <br/>
+              Judul menjelaskan kegiatan yang dilakukan.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              “Percobaan Menanam Kacang Hijau”
+              <br/>
+              <br/>
+              Pengertian Contoh:
+              <br/>
+              Judul menjelaskan isi percobaan.
+              <br/>
+              <br/>
+              Tujuan Percobaan
+              <br/>
+              Bagian ini menjelaskan alasan melakukan percobaan.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              “Mengetahui pengaruh air terhadap pertumbuhan kacang hijau.”
+              <br/>
+              <br/>
+              Pengertian Contoh:
+              <br/>
+              Percobaan dilakukan untuk mengetahui fungsi air bagi tanaman.
+              <br/>
+              <br/>
+              Alat dan Bahan
+              <br/>
+              Menjelaskan perlengkapan yang digunakan.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              Alat:
+              <br/>
+              <ul>
+                <li>elas plastik</li>
+                <li>Penggaris</li>
+              </ul>
+              <br/>
+              Bahan:
+              <ul>
+                <li> Kapas</li>
+                <li>Air</li>
+                <li>Biji kacang hijau</li>
+              </ul>
+                <br/>
+                <br/>
+              Pengertian Contoh:
+                <br/>
+              Bagian ini membantu orang lain menyiapkan percobaan yang sama.
+                <br/>
+                <br/>
+              Langkah-langkah Percobaan
+              <br/>
+              Menjelaskan urutan kegiatan percobaan.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              1. Masukkan kapas ke dalam gelas.
+              2. Letakkan biji kacang hijau di atas kapas.
+              3. Siram dengan air setiap hari.
+              4. Amati pertumbuhan tanaman.
+              <br/>
+              Pengertian Contoh:
+            <br/>
+              Langkah dibuat berurutan agar mudah dilakukan.
+            <br/>
+               Hasil Percobaan
+              <br/>
+              Berisi hasil pengamatan setelah percobaan dilakukan.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              “Setelah lima hari, kacang hijau mulai tumbuh daun kecil.”
+              <br/>
+              <br/>
+              Pengertian Contoh:
+              <br/>
+              Bagian ini menunjukkan hasil yang diperoleh.
+              <br/>
+              <br/>
+              Kesimpulan
+              <br/>
+              Kesimpulan berisi hasil akhir percobaan.
+              <br/>
+              <br/>
+              Contoh:
+              <br/>
+              “Air sangat penting untuk pertumbuhan kacang hijau.”
+              <br/>
+              <br/>
+              Pengertian Contoh:
+              <br/>
+              Bagian ini menjelaskan inti hasil percobaan.
+              <br/>
+              <br/>
+              <strong> Cara Membuat Teks Laporan Percobaan</strong>
+              <br/>
+               Langkah 1 — Tentukan Percobaan
+              <br/>
+              Pilih kegiatan yang ingin dilakukan.
+              <br/>
+              <br/>
+              Contoh:
+              <ul>
+                <li>Menanam kacang hijau</li>
+                <li>Membuat pelangi</li>
+                <li>Mencampur warna</li>
+              </ul>
+              <br/>
+              <br/>
+              Catat Alat dan Bahan
+              <br/>
+              Tuliskan semua perlengkapan.
+              <br/>
+              <br/>
+              Tulis Langkah Secara Urut
+              <br/>
+              Agar mudah dipahami.
+              <br/>
+              <br/>
+              Catat Hasil Percobaan
+              <br/>
+              Tuliskan hasil pengamatan.
+              <br/>
+              <br/>
+              Buat Kesimpulan
+              <br/>
+              Tuliskan hasil akhir percobaan.
+              <br/>
+              <br/>
+              <strong> Perbedaan Teks Laporan Percobaan dan Teks Prosedur</strong>
+              <br/>
+              <table border="1">
+              <tr>
+                <th>Teks Laporan Percobaan</th>
+                <th>Teks Prosedur  </th>
+              </tr>
+              <tr>
+                <td>Ada hasil percobaan </td>
+                <td> Fokus pada langkah </td>
+              </tr>
+              <tr>
+                <td>Menjelaskan hasil pengamatan</td>
+                <td>Menjelaskan cara melakukan</td>
+              </tr>
+              <tr>
+                <td>Ada kesimpulan</td>
+                <td>Tidak selalu ada kesimpulan</td>
+              </tr>
+            </table>
+            <br/>
+            <br/>
+            Kesimpulan
+            <br/>
+            <ul>
+              <li>Teks laporan percobaan adalah teks yang menjelaskan hasil suatu percobaan.</li>
+              <li>Struktur laporan terdiri dari tujuan, alat dan bahan, langkah, hasil, dan kesimpulan.</li>
+              <li>Teks laporan percobaan berdasarkan fakta dan pengamatan nyata.</li>
+              <li>Langkah percobaan harus ditulis secara urut dan jelas.</li>
+              <li>Kesimpulan membantu mengetahui hasil akhir percobaan.</li>
+            </ul>
           </p>
         </div>
       </div>
