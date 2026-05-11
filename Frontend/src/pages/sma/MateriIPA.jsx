@@ -88,7 +88,7 @@ const MateriIPASMA = () => {
 
         .level-title {
           font-size: 1.4rem;
-          color: #ffffff;
+          color: #000000;
           font-weight: 800;
           margin-bottom: 25px;
           border-bottom: 2px solid #445e25;
@@ -130,8 +130,8 @@ const MateriIPASMA = () => {
 
         /* QUIZ STYLING */
         .quiz-wrapper {
-          background-color: #f1f8e9;
-          border: 2px solid #a5d6a7;
+          background-color: #426e0f;
+          border: 2px solid #1d6f20;
           border-radius: 20px;
           padding: 30px;
           margin-top: 50px;
@@ -158,7 +158,7 @@ const MateriIPASMA = () => {
         }
 
         .question-panel {
-          background: white;
+          background: #388e3c;
           padding: 25px;
           border-radius: 15px;
           box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -183,8 +183,8 @@ const MateriIPASMA = () => {
         }
 
         .opt-btn:hover {
-          background-color: #e8f5e9;
-          border-color: #388e3c;
+          background-color: #bef8ad;
+          border-color: #0a4a0d;
         }
 
         .score-box {
@@ -208,7 +208,7 @@ const MateriIPASMA = () => {
       {/* HEADER */}
       <div className="header-sma">
         <h2 style={{ margin: 0 }}>{state?.title || "Sains Lanjutan (IPA)"}</h2>
-        <p style={{ margin: "5px 0", color: "#455a64" }}>
+        <p style={{ margin: "5px 0", color: "#000000" }}>
           Fokus: Kedalaman Materi & Analisis Kuantitatif | ID: {id || "SMA-IPA-COMPLEX"}
         </p>
       </div>
@@ -990,7 +990,7 @@ Translasi: mRNA → protein di ribosom
         ) : (
           questions.length > 0 && (
             <div className="question-panel">
-              <span style={{ color: "#888", fontSize: "0.8rem" }}>Pertanyaan {currentQuestion + 1} / {questions.length}</span>
+              <span style={{ color: "#000000", fontSize: "0.8rem" }}>Pertanyaan {currentQuestion + 1} / {questions.length}</span>
               <h4 style={{ marginTop: "10px", lineHeight: "1.4" }}>{questions[currentQuestion].q}</h4>
               
               <div className="opt-grid">

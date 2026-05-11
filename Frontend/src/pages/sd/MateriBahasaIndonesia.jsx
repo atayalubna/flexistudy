@@ -8,29 +8,29 @@ const IPAMateriSD = () => {
   // --- DATA KUIS IPA SD ---
   const masterQuestions = [
     {
-      q: "Proses perubahan wujud benda dari cair menjadi padat disebut...",
-      options: ["Mencair", "Membeku", "Menguap", "Mengembun"],
-      correct: "Membeku"
+      q: "Di bawah ini yang termasuk huruf vokal adalah..",
+      options: ["H", "L", "U", "M"],
+      correct: "U"
     },
     {
-      q: "Berikut ini yang merupakan kebutuhan dasar makhluk hidup adalah...",
-      options: ["Bermain", "Bekerja", "Makan dan Minum", "Menonton TV"],
-      correct: "Makan dan Minum"
+      q: "Dalam kata BUKU,ada berapa suku kata?",
+      options: ["4", "1", "3", "2"],
+      correct: "2"
     },
     {
-      q: "Sumber energi terbesar bagi bumi adalah...",
-      options: ["Baterai", "Matahari", "Lampu", "Angin"],
-      correct: "Matahari"
+      q: "Apa yang harus kita pahami ketika membaca sebuah teks cerika sederhana,kecuali..",
+      options: ["Tokoh", "ilustrasi cerita", "Kejadian", "Tempat"],
+      correct: "ilustrasi cerita"
     },
     {
-      q: "Perubahan wujud benda dari padat menjadi cair disebut...",
-      options: ["Mengkristal", "Menyublim", "Mencair", "Membeku"],
-      correct: "Mencair"
+      q: "dapat membantu menemukan informasi dari bacaan",
+      options: ["Pertanyaan", "Isi cerita", "Ilustrasi dalam Cerita", "Sinopsis"],
+      correct: "Pertanyaan"
     },
     {
-      q: "Pusat tata surya kita adalah...",
-      options: ["Bumi", "Bulan", "Matahari", "Mars"],
-      correct: "Matahari"
+      q: "Kemampuan untuk memahami isi bacaan adalah pengertian dari?",
+      options: ["Pemahaman Teks", "Cepat membaca", "Belajar terus menerus", "Semua jawaban benar"],
+      correct: "Pemahaman Teks"
     }
   ];
 
