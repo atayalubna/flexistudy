@@ -1,4 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
+const pg = require('pg');
 const path = require('path');
 
 // Use DATABASE_URL for PostgreSQL in production, or SQLite for local dev
